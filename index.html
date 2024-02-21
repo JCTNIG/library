@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer ></script>
+</head>
+<body>
+  <div class="header">
+    <h1>THE JUST LIBRARY</h1>
+    <button class="addBook">Add a book</button>
+  </div>
+
+  <dialog class="modal" id="modal">
+    <form method="dialog" class="modalForm">
+      <fieldset class="formInputs">
+        <p>
+          <input class="inputName input" type="text" name="inputName" required placeholder="Book Title">
+        </p>
+        <p>
+          <input class="inputAuthor input" type="text" name="inputAuthor" required placeholder="Author">
+        </p>
+        <p>
+          <input class="inputPage input" type="number" name="inputPage" placeholder="Pages">
+        </p>
+        <p>
+          <label for="inputStatus">Read Status:</label>
+          <input 
+          class="inputStatus"
+          id="inputStatus" type="checkbox"
+          name="inputStatus"
+          value="true">
+        </p>
+      </fieldset>
+      <fieldset class="formButtons">
+        <p>
+          <button class="cancelButton">Cancel</button>
+        </p>
+        <p>
+          <button class="addButton" type="submit">Add</button>
+        </p>
+      </fieldset>
+    </form>
+    
+  </dialog>
+  <div class="main"></div>
+  <div class="footer">
+    <h6><i class="fa fa-copyright" aria-hidden="true">@Justice</i></h6>
+  </div>
+  
+</body>
+</html>
