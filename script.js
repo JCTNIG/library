@@ -6,18 +6,18 @@ function addBookToLibrary(book) {
   }
 };
 
-function Book(name, author, pages) {
-  this.name = name;
-  this.author = author;
-  this.pages = pages;
-  this.status = false;
+class Book{
+  constructor (name, author, pages) {
+    this.name = name;
+    this.author = author;
+    this.pages = pages;
+    this.status = false;
+  }
+
+  getStatus()  {
+    return this.status === true ? 'Read' : 'Unread';
+  }
 }
-
-Book.prototype.getStatus = function() {
-
-  return this.status === true ? 'Read' : 'Unread';
-}
-
 let main = document.querySelector('.main');
 
 function displayBook(book) {
@@ -132,17 +132,3 @@ form.addEventListener('submit', (event) => {
   modal.close();
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
